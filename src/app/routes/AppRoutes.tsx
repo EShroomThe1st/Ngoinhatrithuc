@@ -23,5 +23,5 @@ export default function AppRoutes() {
       {/* Catch-all */}
       <Route path={PATHS.NOT_FOUND} element={<NotFound />} />
     </Routes>
-  );
+  )
 }
