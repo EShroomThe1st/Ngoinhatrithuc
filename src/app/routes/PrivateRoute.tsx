@@ -6,7 +6,7 @@ interface PrivateRouteProps {
   redirectTo?: string
 }
 
-export default function PrivateRoute({ redirectTo = PATHS.LOGIN }: PrivateRouteProps) {
+export default function PrivateRoute({ redirectTo = PATHS.HOME }: PrivateRouteProps) {
   const isAuthenticated = useAppSelector((state) => state.auth.isAuthenticated)
   const location = useLocation()
 
