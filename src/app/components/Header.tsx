@@ -9,10 +9,11 @@ const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false)
 
   const links = [
-    { label: 'Giới thiệu', to: '/about' },
-    { label: 'Khóa học', to: '/courses' },
-    { label: 'Mục tiêu', to: '/goals' },
-    { label: 'Liên hệ', to: '/contact' }
+    { label: 'Giới thiệu', to: '/#intro' },
+    { label: 'Khóa học', to: '/#courses' },
+    { label: 'Mục tiêu', to: '/#goals' },
+    { label: 'Điều kiện', to: '/#conditions' },
+    { label: 'Liên hệ', to: '/#footer' }
   ]
 
   return (
@@ -25,21 +26,21 @@ const Header = () => {
           alt='Home'
         />
 
-        <nav className='hidden md:flex gap-2'>
+        <div className='hidden md:flex gap-2'>
           {links.map((link) => (
-            <HeaderButton key={link.to} label={link.label} />
+            <HeaderButton key={link.to} label={link.label} to={link.to} />
           ))}
-        </nav>
+        </div>
 
         <HamburgerButton open={menuOpen} onClick={() => setMenuOpen((prev) => !prev)} />
       </div>
 
       {menuOpen && (
-        <nav className='md:hidden flex flex-col items-center gap-2 pb-4'>
+        <div className='md:hidden flex flex-col items-center gap-2 pb-4' onClick={() => setMenuOpen(false)}>
           {links.map((link) => (
-            <HeaderButton key={link.to} label={link.label} />
+            <HeaderButton key={link.to} label={link.label} to={link.to} />
           ))}
-        </nav>
+        </div>
       )}
     </div>
   )

@@ -1,21 +1,40 @@
+import Chip from '@mui/material/Chip'
+
 type BadgeProps = {
   label: string
   bg?: string
   text?: string
-  textSize?: string
+  fontSize?: string | { xs?: string; md?: string }
+  className?: string
 }
-
 
 const Badge = ({
   label,
-  bg = 'bg-amber-950',
-  text = 'text-orange-500',
-  textSize,
+  bg = '#451a03',
+  text = '#f97316',
+  fontSize = '1rem',
+  className,
 }: BadgeProps) => {
   return (
-    <div className={`w-fit flex items-center ${bg} px-2 py-4 mt-5 ${text} ${textSize} font-bold rounded-2xl shadow-2xl`}>
-      {label}
-    </div>
+    <Chip
+      label={label}
+      className={className}
+      sx={{
+        backgroundColor: bg,
+        color: text,
+        fontSize,
+        fontWeight: 'bold',
+        borderRadius: '1rem',
+        boxShadow: 6,
+        height: 'auto',
+        width: 'fit-content',
+        '& .MuiChip-label': {
+          px: 2,
+          py: 1,
+        },
+        '&:hover': { backgroundColor: bg },
+      }}
+    />
   )
 }
 
