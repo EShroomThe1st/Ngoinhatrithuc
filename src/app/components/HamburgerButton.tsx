@@ -6,7 +6,7 @@ type HamburgerButtonProps = {
 const HamburgerButton = ({ open, onClick }: HamburgerButtonProps) => {
   return (
     <button
-      className={`md:hidden cursor-pointer p-2 transition-all duration-200 ${
+      className={`lg:hidden cursor-pointer p-2 transition-all duration-200 ${
         open
           ? 'text-orange-500 drop-shadow-[0_0_8px_rgba(249,115,22,0.8)]'
           : 'text-current hover:text-orange-500 hover:drop-shadow-[0_0_8px_rgba(249,115,22,0.8)]'

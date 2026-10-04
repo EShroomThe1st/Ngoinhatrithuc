@@ -18,7 +18,7 @@ const Header = () => {
 
   return (
     <div className='fixed top-0 left-0 right-0 z-50 w-full bg-white'>
-      <div className='flex justify-between w-2xl p-5'>
+      <div className='flex justify-between lg:justify-start w-full p-5'>
         <img
           src={icon}
           className='rounded-full size-16 cursor-pointer border-2 border-transparent transition-all duration-200 hover:border-orange-500 hover:shadow-[0_0_15px_rgba(249,115,22,0.7)]'
@@ -26,7 +26,7 @@ const Header = () => {
           alt='Home'
         />
 
-        <div className='hidden md:flex gap-2'>
+        <div className='hidden lg:flex gap-2'>
           {links.map((link) => (
             <HeaderButton key={link.to} label={link.label} to={link.to} />
           ))}
@@ -36,7 +36,7 @@ const Header = () => {
       </div>
 
       {menuOpen && (
-        <div className='md:hidden flex flex-col items-center gap-2 pb-4' onClick={() => setMenuOpen(false)}>
+        <div className='lg:hidden flex flex-col items-center gap-2 pb-4' onClick={() => setMenuOpen(false)}>
           {links.map((link) => (
             <HeaderButton key={link.to} label={link.label} to={link.to} />
           ))}

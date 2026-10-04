@@ -4,7 +4,7 @@ type BadgeProps = {
   label: string
   bg?: string
   text?: string
-  fontSize?: string | { xs?: string; md?: string }
+  fontSize?: string | { xs?: string; md?: string; lg?: string }
   className?: string
 }
 
@@ -22,7 +22,7 @@ const Badge = ({
       sx={{
         backgroundColor: bg,
         color: text,
-        fontSize,
+        fontSize, // MUI sx handles responsive objects automatically
         fontWeight: 'bold',
         borderRadius: '1rem',
         boxShadow: 6,

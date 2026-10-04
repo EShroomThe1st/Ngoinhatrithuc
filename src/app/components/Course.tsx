@@ -20,19 +20,19 @@ const Course = () => {
         />
 
         {/* specCourses — row on desktop, column on mobile */}
-        <div className='hidden md:flex md:flex-row md:justify-between items-center gap-6 mt-5'>
+        <div className='hidden xl:flex xl:flex-row lg:justify-around items-center gap-6 mt-5'>
           {specCourses.map((c) => (
             <CourseCard key={c.id} course={c} />
           ))}
         </div>
-        <div className='flex flex-col md:hidden items-center gap-6 mt-5'>
+        <div className='flex flex-col xl:hidden items-center gap-6 mt-5'>
           {specCourses.map((c) => (
             <CourseCard key={c.id} course={c} size='sml' />
           ))}
         </div>
 
         {/* courses — row on desktop, column on mobile */}
-        <div className='flex flex-col md:flex-row md:justify-between items-center gap-6 mt-5'>
+        <div className=' flex flex-col xl:flex-row xl:justify-between items-center gap-6 mt-5'>
           {courses.map((c) => (
             <CourseCard key={c.id} course={c} size='sml' />
           ))}

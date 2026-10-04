@@ -19,28 +19,28 @@ const sizeStyles: Record<
   }
 > = {
   default: {
-    card: 'w-3xl rounded-3xl',
+    card: 'w-full rounded-3xl',
     bannerPadding: 'pt-2',
     leftColumn: 'mx-10',
-    title: 'text-3xl md:text-5xl',
+    title: 'text-3xl lg:text-5xl',
     metaRow: 'gap-4 mt-5',
     badgeFont: '2rem',
-    format: 'text-2xl md:text-3xl',
-    hero: 'h-24 md:h-80',
+    format: 'text-2xl lg:text-3xl',
+    hero: 'w-40 h-40 md:w-72 md:h-72',
     detailsList: 'py-10 px-8',
     detailItem: 'text-xl my-2',
   },
   sml: {
-    card: 'w-lg rounded-2xl',
+    card: 'w-full rounded-2xl',
     bannerPadding: 'pt-1',
     leftColumn: 'mx-6',
     title: 'text-3xl',
     metaRow: 'gap-2 mt-2',
     badgeFont: '1rem',
     format: 'text-2xl',
-    hero: 'h-48',
+    hero: 'w-24 h-24 md:w-40 md:h-40',
     detailsList: 'py-4 px-10',
-    detailItem: 'text-md my-1',
+    detailItem: 'text-lg my-1',
   },
 }
 
@@ -52,10 +52,10 @@ const CourseCard = ({ course, size = 'default' }: CourseCardProps) => {
       className={`flex flex-col bg-white h-1/2 overflow-hidden mx-5 shadow-2xl ${s.card}`}
     >
       <div
-        className={`flex flex-row items-center justify-between bg-cover bg-center bg-no-repeat ${s.bannerPadding}`}
+        className={`flex flex-row items-center justify-center md:justify-between bg-cover bg-center bg-no-repeat ${s.bannerPadding}`}
         style={{ backgroundImage: `url(${banner})` }}
       >
-        <div className={`flex flex-col ${s.leftColumn}`}>
+        <div className={`flex flex-col my-5 lg:my-0 ${s.leftColumn}`}>
           <CustomTitle
             label={course.title}
             textSize={s.title}
@@ -74,11 +74,13 @@ const CourseCard = ({ course, size = 'default' }: CourseCardProps) => {
           </div>
         </div>
 
-        <img
-          src={course.hero}
-          className={`mx-auto object-contain ${s.hero}`}
-          alt='Hero'
-        />
+        <div className='hidden md:flex'>
+          <img
+            src={course.hero}
+            className={`mx-auto object-contain ${s.hero}`}
+            alt='Hero'
+          />
+        </div>
       </div>
 
       <ul className={`flex flex-col text-left list-disc ${s.detailsList}`}>
