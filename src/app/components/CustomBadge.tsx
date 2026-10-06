@@ -10,8 +10,8 @@ type BadgeProps = {
 
 const Badge = ({
   label,
-  bg = '#451a03',
-  text = '#f97316',
+  bg = '#1A4966',
+  text = '#FFFFFF',
   fontSize = '1rem',
   className,
 }: BadgeProps) => {

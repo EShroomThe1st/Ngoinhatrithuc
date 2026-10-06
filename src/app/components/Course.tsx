@@ -6,7 +6,7 @@ const Course = () => {
   return (
     <div
       id='courses'
-      className='flex flex-col items-center w-full bg-amber-700 py-10 mt-10'
+      className='flex flex-col items-center w-full bg-sky-600 py-10 mt-10'
     >
       <h1 className='text-5xl font-bold text-white text-center px-4'>
         LỘ TRÌNH HỌC TỐI ƯU HÓA

@@ -21,7 +21,7 @@ const Header = () => {
       <div className='flex justify-between lg:justify-start w-full p-5'>
         <img
           src={icon}
-          className='rounded-full size-16 cursor-pointer border-2 border-transparent transition-all duration-200 hover:border-orange-500 hover:shadow-[0_0_15px_rgba(249,115,22,0.7)]'
+          className='rounded-full size-16 cursor-pointer border-2 border-transparent transition-all duration-200 hover:border-sky-500 hover:shadow-[0_0_15px_rgba(59,130,246,0.7)]'
           onClick={() => navigate('/')}
           alt='Home'
         />

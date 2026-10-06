@@ -8,11 +8,11 @@ const Footer = () => {
   const navigate = useNavigate()
 
   return (
-    <div id='footer' className='w-full bg-amber-950 mt-10 py-10 px-10'>
-      <div className='my-5 xl:mx-25 2xl:mx-80 xl:my-0'>
+    <div id='footer' className='w-full bg-sky-950 mt-10 py-10 px-10'>
+      <div className='my-5 xl:mx-25 xl:my-0 2xl:mx-48'>
         <img
           src={icon}
-          className='rounded-full cursor-pointer border-2 border-transparent transition-all duration-200 hover:border-orange-500 hover:shadow-[0_0_15px_rgba(249,115,22,0.7)]'
+          className='rounded-full cursor-pointer border-2 border-transparent transition-all duration-200 hover:border-sky-500 hover:shadow-[0_0_15px_rgba(59,130,246,0.7)]'
           onClick={() => navigate('/')}
           alt='Home'
         />
@@ -25,7 +25,7 @@ const Footer = () => {
           </h1>
           {contacts.map(({ Icon, label, value }) => (
             <div key={label} className='flex text-left items-center'>
-              <Icon className='text-amber-600 my-2 shrink-0' />
+              <Icon className='text-white my-2 shrink-0' />
               <p>
                 {label}: {value}
               </p>

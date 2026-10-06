@@ -6,8 +6,8 @@ const Goals = () => {
 
   return (
     <div id='goals' className='mt-15'>
-      <h1 className=' text-3xl lg:text-5xl font-bold text-amber-950 '>BẠN NHẬN ĐƯỢC GÌ</h1>
-      <h1 className=' text-3xl lg:text-5xl font-bold text-amber-700 '>KHI THAM GIA KHÓA HỌC CỦA CHÚNG TÔI</h1>
+      <h1 className=' text-3xl lg:text-5xl font-bold text-sky-950 '>BẠN NHẬN ĐƯỢC GÌ</h1>
+      <h1 className=' text-3xl lg:text-5xl font-bold text-sky-700 '>KHI THAM GIA KHÓA HỌC CỦA CHÚNG TÔI</h1>
 
       <div className='grid grid-cols-1 xl:grid-cols-2 gap-6 mx-5 mt-10'>
         {columns.map((column, colIdx) => (

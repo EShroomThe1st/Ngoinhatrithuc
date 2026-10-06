@@ -7,7 +7,7 @@ import { introData } from '../data/introData';
 const Intro = () => {
   return (
     <div id="intro" className='flex flex-col items-center my-10'>
-      <h1 className=' text-3xl lg:text-5xl font-bold text-amber-950 '>CHINH PHỤC TIẾNG ANH</h1>
+      <h1 className=' text-3xl lg:text-5xl font-bold text-sky-800 '>CHINH PHỤC TIẾNG ANH</h1>
       <div className='mt-10'>
         <Badge label='TỪ 0 ĐẾN TINH THÔNG' text='white' fontSize="clamp(1rem, 2vw, 2rem)"/>
       </div>

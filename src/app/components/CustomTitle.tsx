@@ -12,7 +12,7 @@ type CustomTitleProps = {
 
 const CustomTitle = ({ label, textSize, stroke = 'md' }: CustomTitleProps) => (
   <span
-    className={`text-amber-950 ${textSize} font-bold italic ${strokeMap[stroke]}`}
+    className={`text-blue-950 ${textSize} font-bold italic ${strokeMap[stroke]}`}
   >
     {label}
   </span>

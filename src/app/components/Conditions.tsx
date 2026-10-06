@@ -12,10 +12,10 @@ const Conditions = () => {
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 w-full max-w-7xl mx-auto px-6 py-12 items-center">
         {/* 1. Title */}
         <div className="flex flex-col text-center lg:text-left lg:col-start-2 lg:row-start-1 ">
-          <h2 className="text-3xl lg:text-5xl font-bold text-amber-950">
+          <h2 className="text-3xl lg:text-5xl font-bold text-blue-950">
             AI NÊN THAM GIA
           </h2>
-          <h2 className="text-3xl lg:text-5xl font-bold text-amber-900">
+          <h2 className="text-3xl lg:text-5xl font-bold text-blue-900">
             KHÓA HỌC TIẾNG ANH
           </h2>
         </div>
@@ -37,21 +37,21 @@ const Conditions = () => {
         {/* 3. Details */}
         <ul className="lg:col-start-2 lg:row-start-2 flex flex-col gap-4 text-white text-left">
           <li className="flex items-start gap-3">
-            <CheckCircleOutlinedIcon className="text-amber-950 shrink-0 mt-1" />
+            <CheckCircleOutlinedIcon className="text-blue-950 shrink-0 mt-1" />
             <span>
               Người yêu thích Tiếng Anh: đam mê văn hóa, du lịch. Kết bạn Năm
               Châu - Nối liền Địa Cầu.
             </span>
           </li>
           <li className="flex items-start gap-3">
-            <CheckCircleOutlinedIcon className="text-amber-950 shrink-0 mt-1" />
+            <CheckCircleOutlinedIcon className="text-blue-950 shrink-0 mt-1" />
             <span>
               Học Sinh, Sinh Viên: Lợi thế vượt trội trong tương lai nghề nghiệp,
               cơ hội học bổng du học với một ngôn ngữ toàn cầu.
             </span>
           </li>
           <li className="flex items-start gap-3">
-            <CheckCircleOutlinedIcon className="text-amber-950 shrink-0 mt-1" />
+            <CheckCircleOutlinedIcon className="text-blue-950 shrink-0 mt-1" />
             <span>
               Doanh nhân và Chuyên Gia Kinh Doanh: Tìm kiếm cơ hội kinh doanh và
               mở rộng thị trường, Tiếng Anh giúp kết nối với các đối tác và nhà
@@ -59,7 +59,7 @@ const Conditions = () => {
             </span>
           </li>
           <li className="flex items-start gap-3">
-            <CheckCircleOutlinedIcon className="text-amber-950 shrink-0 mt-1" />
+            <CheckCircleOutlinedIcon className="text-blue-950 shrink-0 mt-1" />
             <span>
               Nhân Viên, Hướng Dẫn Viên Du Lịch: Với hơn 1.4 tỷ người sử dụng
               Tiếng Anh, Tiếng Anh tốt giúp tiếp cận khách du lịch dễ dàng và uy
